@@ -1,11 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Zerouali Mohamed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border: 4px solid white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 30px 20px;
+            border-bottom: 1px solid #e0e0e0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-in-out;
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #6a11cb;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .two-column > div {
+            flex: 1;
+        }
+
+        /* Contact Info */
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgb(237, 232, 232);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #6a11cb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#language">Language & Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <img src="image.png" alt="Zerouali Mohamed">
+            <div>
+                <h1>Zerouali Mohamed</h1>
+                <p>Programmer & Designer</p>
+            </div>
+        </div>
+
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Je suis une personne motivée et sérieuse. J'aime travailler en équipe et apprendre de nouvelles choses. Je suis organisé et je communique bien. J'aime les défis et je m'adapte facilement.</p>
+        </div>
+
+        <div id="language" class="section two-column">
+            <div>
+                <h2>Language</h2>
+                <ul>
+                    <li>English (Advanced)</li>
+                    <li>Arabic (Advanced)</li>
+                    <li>French (Basic)</li>
+                </ul>
+
+                <h2>Skills</h2>
+                <ul>
+                    <li>Management Skills</li>
+                    <li>Creativity</li>
+                    <li>Digital Creation</li>
+                    <li>Programming (HTML, CSS, JavaScript, C, Python, Assembly, Bash Script)</li>
+                    <li>3D/2D Design</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><strong>Phone:</strong> +212 634326434</p>
+                    <p><strong>Email:</strong> mohamed.zerouali4@usmba.ac.ma</p>
+                    <p><strong>Location:</strong> Taza, Hay Elmourabitine</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Wardiere Inc.</strong> (2022 - 2024, Rabat, Maroc)
+                    <ul>
+                        <li>Tâches administratives quotidiennes</li>
+                        <li>Coordination de projets en équipe</li>
+                        <li>Communication avec les clients</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Studio Showde</strong> (2010 - 2015, Casablanca, Maroc)
+                    <ul>
+                        <li>Gestion des emplois du temps et des ressources pour des projets créatifs</li>
+                        <li>Expérience en médias numériques</li>
+                        <li>Résolution de problèmes techniques et logistiques</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>University-polydisciplined in Taza</strong> (2023 - 2025) - Deugue en Informatique</li>
+                <li><strong>Ali-ben-barri Highschool in Taza</strong> (2020 - 2023) - Master of Business Management</li>
+                <li><strong>HOME-University</strong> (2019 - 2025) - Advanced in designing tools (Blender3d, Photoshop, DAZ studio)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        const revealSection = () => {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < window.innerHeight - 100) {
+                    section.classList.add('show');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealSection);
+        revealSection(); // Trigger on initial load
+    </script>
+</body>
 </html>
