@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Zerouali Mohamed</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Mono', monospace;
             margin: 0;
             padding: 0;
-            background-color: #f9f9fb;
-            color: #333;
+            background-color: #0a0a0a;
+            color: #e0e0e0;
             line-height: 1.6;
         }
 
         .container {
             max-width: 900px;
             margin: 20px auto;
-            background: #ffffff;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            background: #1a1a1a;
+            box-shadow: 0 0 20px rgba(106, 17, 203, 0.5);
             border-radius: 10px;
             overflow: hidden;
         }
@@ -32,6 +32,7 @@
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: white;
             padding: 30px 20px;
+            border-bottom: 2px solid #6a11cb;
         }
 
         .header img {
@@ -39,23 +40,26 @@
             width: 100px;
             height: 100px;
             margin-right: 20px;
-            border: 4px solid white;
+            border: 4px solid #6a11cb;
         }
 
         .header h1 {
             margin: 0;
             font-size: 2rem;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px #6a11cb;
         }
 
         .header p {
             margin: 5px 0 0;
             font-size: 1.2rem;
+            color: #e0e0e0;
         }
 
         /* Section Styles */
         .section {
             padding: 30px 20px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #333;
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease-in-out;
@@ -70,6 +74,8 @@
             margin-top: 0;
             color: #6a11cb;
             font-size: 1.5rem;
+            font-family: 'Orbitron', sans-serif;
+            text-shadow: 0 0 10px #6a11cb;
         }
 
         p {
@@ -82,6 +88,7 @@
 
         ul li {
             margin-bottom: 10px;
+            color: #e0e0e0;
         }
 
         /* Two Column Layout */
@@ -104,8 +111,8 @@
         nav {
             position: sticky;
             top: 0;
-            background: rgb(237, 232, 232);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: #1a1a1a;
+            box-shadow: 0 2px 5px rgba(106, 17, 203, 0.5);
             padding: 10px 20px;
             z-index: 1000;
         }
@@ -125,12 +132,27 @@
 
         nav ul li a {
             text-decoration: none;
-            color: #2575fc;
+            color: #6a11cb;
             font-weight: bold;
+            text-shadow: 0 0 5px #6a11cb;
         }
 
         nav ul li a:hover {
-            color: #6a11cb;
+            color: #2575fc;
+            text-shadow: 0 0 10px #2575fc;
+        }
+
+        /* Neon Glow Effect */
+        .neon {
+            text-shadow: 0 0 5px #6a11cb, 0 0 10px #6a11cb, 0 0 20px #6a11cb;
+        }
+
+        /* Cyberpunk Border */
+        .cyber-border {
+            border: 2px solid #6a11cb;
+            box-shadow: 0 0 10px #6a11cb;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -148,7 +170,7 @@
         <div class="header">
             <img src="image.png" alt="Zerouali Mohamed">
             <div>
-                <h1>Zerouali Mohamed</h1>
+                <h1 class="neon">Zerouali Mohamed</h1>
                 <p>Programmer & Designer</p>
             </div>
         </div>
@@ -179,7 +201,7 @@
 
             <div>
                 <h2>Contact</h2>
-                <div class="contact-info">
+                <div class="contact-info cyber-border">
                     <p><strong>Phone:</strong> +212 634326434</p>
                     <p><strong>Email:</strong> mohamed.zerouali4@usmba.ac.ma</p>
                     <p><strong>Location:</strong> Taza, Hay Elmourabitine</p>
